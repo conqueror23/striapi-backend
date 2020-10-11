@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "pages",
+  "info": {
+    "name": "home",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "TradingCup2020": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "videos": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "header": {
+      "type": "component",
+      "repeatable": true,
+      "component": "header.header"
+    }
+  }
+}

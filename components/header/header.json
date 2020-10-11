@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_header_headers",
+  "info": {
+    "name": "header",
+    "icon": "heading"
+  },
+  "options": {},
+  "attributes": {
+    "mainContent": {
+      "type": "string"
+    },
+    "Navigations": {
+      "type": "enumeration",
+      "enum": [
+        "home",
+        "page1",
+        "page2"
+      ],
+      "enumName": "navs"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
